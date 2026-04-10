@@ -25,7 +25,7 @@ php artisan migrate --seed
 
 ### 🔹 **Step 6: Run the Application**
 ```sh
-go to recaptcha key and script key add 
+
 php -S 127.0.0.1:12345 server.php
 
 npm start
