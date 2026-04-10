@@ -25,9 +25,9 @@ php artisan migrate --seed
 
 ### 🔹 **Step 6: Run the Application**
 ```sh
-
+cd backend run
 php -S 127.0.0.1:12345 server.php
-
+cd frontend run
 npm start
 ```
 
