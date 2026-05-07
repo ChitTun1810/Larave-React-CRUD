@@ -1,0 +1,21 @@
+{
+    # frankenphp directive MUST be in the global block
+    frankenphp
+
+    # Disable admin API
+    admin off
+
+    # HTTP only – no automatic HTTPS
+    auto_https off
+}
+
+# Listen on 8080
+:8080 {
+    root * /app/public
+
+    # Encode responses
+    encode zstd br gzip
+
+    # Serve PHP files through FrankenPHP
+    php_server
+}
